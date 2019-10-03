@@ -1,0 +1,21 @@
+//***********************************
+//   KiloTonNauti.java      @ArshiaKo
+//
+//    Kilometer to Nautical Miles
+//***********************************
+
+
+public class KiloTonNauti {  
+  public static void main (String [] args) {
+    
+    //System.out.print prints the stars
+    System.out.println("        * * * * * *         ");
+    System.out.println("         * YIELD *          ");
+    System.out.println("          *     *           ");
+    System.out.println("           *   *            ");
+    System.out.println("            * *             ");
+    System.out.println("             *              ");
+ 
+  }
+}
+    
