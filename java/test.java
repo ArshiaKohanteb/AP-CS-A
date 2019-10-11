@@ -14,12 +14,14 @@ public class test {
     
     
     Scanner reader = new Scanner(System.in);
+   int x = 1;
    
-    System.out.print("What's your name?");
-    
-    input = reader.nextDouble();
-    
-    
+    while (x < 100)
+    {
+      x = x * 2;
+      
+    }
+System.out.println(x);
   }
 }
     
