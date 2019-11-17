@@ -1,0 +1,59 @@
+//Bank account class 
+public class BankAccount
+ {
+   //Instance variables
+   //An account owner has a balance and a name
+   //Should be private
+  
+   
+   //Default constructor method
+   public BankAccount()
+   {
+     //initiation of variables
+ 
+   }
+  
+   //constructor that takes 2 parameters for name and balance 
+    public BankAccount(String nm, double initBal)
+   {
+     //initiation of variables
+
+   }
+    
+   //Accessors 
+   //get the Account owner's name
+   public String getName()
+   {
+ 
+   }
+   
+   //get the balance 
+   public double getBalance()
+   {
+   
+   }
+   
+   //Mutators
+   // method to make a deposit
+   public void deposit(double deposit)
+   {
+     //A deposit affects the balance
+   
+   }
+   
+   //method to make a withdrawal
+   
+   public void withdrawal(double withdrawal)
+   {
+     //A withdrawal affects the balance
+   }
+   
+   //toString method  
+   public String toString()
+   {
+     
+   }                         
+   
+  
+   
+ }

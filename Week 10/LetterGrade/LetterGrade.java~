@@ -1,0 +1,47 @@
+//***********************************
+//   random.java         @ArshiaKo
+//
+//   Random - Hot or Cold
+//***********************************
+
+import java.util.Scanner;
+
+public class LetterGrade {  
+  public static void main (String [] args) {
+    
+    int guess = 0, count = 0, num = 0;
+  
+    Scanner reader = new Scanner(System.in);
+    Random rand = new Random();
+    
+    num = rand.nextInt(101);
+    System.out.println("Random Number has been generated");
+    System.out.println("Please enter a guess:");
+    
+    while(true)
+    {
+      guess = reader.nextInt();
+      count++;
+      
+      if(guess == num)
+      {
+        System.out.println("PERFECT! You guessed correctly! It took you " + count + " guesses!");
+        break;
+      }
+      
+      if(guess > num)
+      {
+        System.out.println("Too HIGH! Guess again");
+      }
+      
+      if(guess < num)
+      {
+        System.out.println("Too LOW! Guess again");
+      }
+      
+    }
+    
+    
+  }
+}
+    

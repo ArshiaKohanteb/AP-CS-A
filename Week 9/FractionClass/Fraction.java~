@@ -1,0 +1,49 @@
+//FractionClass Class - Arshia Kohanteb
+
+public class Fraction
+{
+  //instance variables
+  private int numerator;
+  private int denominator;
+  
+  //constructor
+  public Fraction(int numer, int denom)
+  {
+    numerator = numer;
+    denominator = denom;
+  }
+  
+  // Set - Mutator 
+  public void setLetter(String let) 
+  {  
+    
+  }  
+ 
+
+
+  // Get - Accessor
+  public int getNumerator() 
+  {  
+    return numerator;
+  }
+  
+    // Get - Accessor
+  public int getDenominator() 
+  {  
+    return denominator;
+  }
+  
+  /*
+  //Print - Accessor
+  public void printTile()
+    {
+        System.out.println("Letter: " + letter + " and Value: " + value );
+    }
+    */
+  
+  public Fraction add()
+  { 
+    return new Fraction(1,1);
+  }
+  
+}
