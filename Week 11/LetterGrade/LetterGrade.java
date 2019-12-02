@@ -1,0 +1,130 @@
+//***********************************
+//   LetterGrade.java         @ArshiaKo
+//
+//   Letter Grade (Method)
+//***********************************
+
+import java.util.Scanner;
+
+public class LetterGrade {  
+  public static void main (String [] args) {
+    
+    int numerical=0, average = 0, minimum = 100, maximum = 0, count = 0;
+    String grade;
+  
+    Scanner reader = new Scanner(System.in);
+
+    //if num is not equal to -1 then continue
+    while (true)
+    {
+    System.out.println("Please enter a numerical Grade and after the Last student enter -1");
+    numerical = reader.nextInt();
+    
+    if(numerical != -1)
+    {
+    count ++;
+    grade = letterGrade(numerical);
+    System.out.println("That's a " + grade);
+    System.out.println();
+    
+    if (numerical < minimum)
+    {
+      minimum = numerical;
+    }
+    if (numerical > maximum)
+    {
+      maximum = numerical;
+    }
+    average += numerical;
+    }
+    else
+    {
+      break;
+    }
+    
+   }
+  
+    average = average / count;//to find the real average
+    System.out.println("\nYou entered " + count + " student(s).");
+    System.out.println("The class minimum was " + minimum);
+    System.out.println("The class average was " + average);
+    System.out.println("The class maximum was " + maximum);
+  }
+  
+  //Letter Grade Method
+  public static String letterGrade(int numerical)
+  {
+    if(numerical >= 0 && numerical <= 59)
+    {
+    return "F";
+    }
+    
+    else if(numerical >= 60 && numerical <= 61)
+    {
+    return "D-";
+    }
+    
+    else if(numerical >= 62 && numerical <= 65)
+    {
+    return "D";
+    }
+    
+    else if(numerical >= 66 && numerical <= 69)
+    {
+    return "D+";
+    }
+    
+    else if(numerical >= 70 && numerical <= 71)
+    {
+    return "C-";
+    }
+    
+    else if(numerical >= 72 && numerical <= 75)
+    {
+    return "C";
+    }
+    
+    else if(numerical >= 76 && numerical <= 79)
+    {
+    return "C+";
+    }
+    
+    else if(numerical >= 80 && numerical <= 81)
+    {
+    return "B-";
+    }
+    
+    else if(numerical >= 82 && numerical <= 85)
+    {
+    return "B";
+    }
+    
+    else if(numerical >= 86 && numerical <= 89)
+    {
+    return "B+";
+    }
+    
+    else if(numerical >= 90 && numerical <= 91)
+    {
+    return "A-";
+    }
+    
+    else if(numerical >= 92 && numerical <= 95)
+    {
+    return "A";
+    }
+    
+    else if(numerical >= 96 && numerical <= 100)
+    {
+    return "A+";
+    }
+    else
+    {
+    return "Please enter valid values!";
+    }
+  }
+  
+  }
+
+
+    
