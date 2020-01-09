@@ -1,33 +1,36 @@
 //***********************************
-//   KiloToNauti.java      @ArshiaKo
+//   CreativeConvert.java      @ArshiaKo
 //
-//    Kilometer to Nautical Miles
+//    Converting Inches to Meters
 //***********************************
 
 import java.util.Scanner;
 
-public class KiloTonNauti {  
+public class CreativeConvert {  
   public static void main (String [] args) {
     
-    //declaring type Double name kilo
-    double kilo;
+    //declaring type Double name inch
+    double inch;
    
     //created scanner object
     Scanner reader = new Scanner(System.in);
    
-    //print Input kilometes before asking for number
-    System.out.print("Input Kilometers:");
     
-    //ask the user for kilometers to convert
-    kilo = reader.nextDouble();
+    System.out.println("Inch to Meter Converter");
     
-    //print Nautical Miles: before the answer
-    System.out.print("Nautical Miles:");
+    //print Input inches before asking for number
+    System.out.print("Input Inches:");
     
-    //Formula for Kilometer to Nautical Mile is x * 0.539957
-    System.out.println(kilo * 0.539957);
+    //ask the user for inches to convert
+    inch = reader.nextDouble();
+    
+    //print Meters: before the answer
+    System.out.print("Meters:");
+    
+    //Formula for Inches to Meter is x * 0.0254
+    System.out.println(inch * 0.0254);
     
  
   }
 }
-    
+     

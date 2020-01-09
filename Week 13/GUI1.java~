@@ -1,0 +1,31 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class GUI1
+{
+ public static void main(String[] args)
+ {
+   JFrame theGUI = new JFrame();
+   theGUI.setTitle("square checker board");
+   theGUI.setSize(500,500);
+   theGUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+   JPanel panel1 = new JPanel();
+   panel1.setBackground(Color.red);
+   JPanel panel2 = new JPanel();
+   panel2.setBackground(Color.black);
+   JPanel panel3 = new JPanel();
+   panel3.setBackground(Color.blue);
+   JPanel panel4 = new JPanel();
+   panel4.setBackground(Color.green);
+   JPanel panel5 = new JPanel();
+   panel5.setBackground(Color.red);
+   Container pane = theGUI.getContentPane();
+   pane.setLayout(new GridLayout(4,2));
+   pane.add(panel1);
+   pane.add(panel2);
+   pane.add(panel3);
+   pane.add(panel4);
+   theGUI.setVisible(true);
+   theGUI.setResizable(false);
+ }
+}
