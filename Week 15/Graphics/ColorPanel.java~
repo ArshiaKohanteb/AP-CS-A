@@ -1,0 +1,7 @@
+// Example 3.5: an empty colored panel  import javax.swing.*; 
+import java.awt.*;  
+public class ColorPanel extends JPanel{ 
+  public ColorPanel(Color backColor){ 
+    setBackground(backColor); 
+  }
+}

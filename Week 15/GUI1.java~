@@ -1,0 +1,76 @@
+//Arshia Kohanteb
+//January 24, 2020
+//AP Computer Science
+//A GUI APP OF YOUR OWN DESIGN
+//Student Planner
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Scanner;
+
+public class GUI1
+{
+ public static void main(String[] args)
+ {
+   Scanner input = new Scanner(System.in);
+   int assignments;
+   int expected;
+   int totalAssignments;
+   int totalTime;
+   int ascii = 0;
+   
+   System.out.println("School Planner:");
+     
+   System.out.println("Please enter school name:");
+   String school = input.nextLine();
+     System.out.println("Please Enter Amount of Assignments for History:");
+     assignments = input.nextInt();
+     System.out.println("Expected time to complete average assignment for History (Minutes):");
+     expected = input.nextInt();
+     Class History = new Class(assignments,expected);
+     
+     System.out.println("Please Enter Amount of Assignments for Math:");
+     assignments = input.nextInt();
+     System.out.println("Expected time to complete average assignment for Math (Minutes):");
+     expected = input.nextInt();
+     Class Math = new Class(assignments,expected);
+     
+     System.out.println("Please Enter Amount of Assignments for Science:");
+     assignments = input.nextInt();
+     System.out.println("Expected time to complete average assignment for Science (Minutes):");
+     expected = input.nextInt();
+     Class Science = new Class(assignments,expected);
+     
+     totalAssignments = History.getAssignments() + Math.getAssignments() + Science.getAssignments();
+     totalTime = (History.getAssignments()*History.getExpected())+(Math.getAssignments()*Math.getExpected())+(Science.getAssignments()*Science.getExpected());
+     
+     for(int i = 0; i < school.length(); i++)
+     {
+       ascii += school.charAt(i);
+     }
+     
+     while (ascii > 255)
+     {
+       ascii /= 2;
+     }
+     
+   JFrame theGUI = new JFrame("School Planner");
+   theGUI.setSize(400,400);
+   theGUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+   theGUI.setBackground(new Color(ascii,ascii,ascii));
+   theGUI.setLayout(new BorderLayout());
+   theGUI.add(new JLabel(" "+ ascii));
+   theGUI.setVisible(true);
+   
+       
+        theGUI.pack();
+    }
+ 
+    public void paint(Graphics g) 
+    {
+      
+      g.setColor(Color.red);
+        g.fillOval(100,  100, 200, 200);
+    }
+ }
+

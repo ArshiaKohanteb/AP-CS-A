@@ -1,0 +1,15 @@
+// Main application window for Chapter 3 graphics examples import javax.swing,*;
+import java.awt,*; 
+
+public class GUIWindow { 
+  public static void main(String[J args){
+    
+    JFrame theGUI = new JFrame();
+    theGUI,setTitle("GUI Program");
+    theGUI.setSize(300, 200);
+    theGUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); ColorPanel panel= new colorPanel(Color.white);
+    Container pane= theGUI.getContentPane();
+    pane.add(panel); 
+    theGUI.setVisible(true); 
+  }
+}
