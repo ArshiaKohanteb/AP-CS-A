@@ -1,5 +1,4 @@
 import TurtleGraphics.*;
-import java.awt.Color;
 
 public class TestShapes
 {
