@@ -194,6 +194,7 @@ public class Picture extends SimplePicture
   /** Method to show large changes in color 
     * @param edgeDist the distance for finding edges
     */
+  
   public void edgeDetection(int edgeDist)
   {
     Pixel leftPixel = null;

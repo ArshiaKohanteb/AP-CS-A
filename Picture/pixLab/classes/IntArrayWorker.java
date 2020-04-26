@@ -11,6 +11,22 @@ public class IntArrayWorker
     matrix = theMatrix;
   }
   
+  public int getCount(int find)
+  {
+    int count = 0;
+    for (int row = 0; row < matrix.length; row++)
+    {
+      for (int col = 0; col < matrix[0].length; col++)
+      {
+        if(matrix[row][col] == find)
+        {
+        	count++;
+        }
+      }
+    }
+    return count;
+  }
+  
   /**
    * Method to return the total 
    * @return the total of the values in the array
@@ -26,6 +42,35 @@ public class IntArrayWorker
       }
     }
     return total;
+  }
+  
+  public int getColTotal(int column)
+  {
+    int total = 0;
+    
+      for (int row = 0; row < matrix.length; row++)
+      {
+        total = total + matrix[row][column];
+      }
+
+    return total;
+  }
+  
+  
+  public int getLargest()
+  {
+    int largest = -1;
+    for (int row = 0; row < matrix.length; row++)
+    {
+      for (int col = 0; col < matrix[0].length; col++)
+      {
+        if(matrix[row][col] > largest) 
+        {
+        	largest = matrix[row][col];
+        }
+      }
+    }
+    return largest;
   }
   
   /**

@@ -1,0 +1,5 @@
+History,3
+Math,1
+Science,2
+English,3
+Engineering,2

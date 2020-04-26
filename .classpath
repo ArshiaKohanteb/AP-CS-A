@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Celebrity/src"/>
+	<classpathentry kind="src" path="images/Color Filter"/>
+	<classpathentry kind="src" path="images/Negative"/>
+	<classpathentry kind="src" path="images/Sepia"/>
+	<classpathentry kind="src" path="images/Test Programs"/>
+	<classpathentry excluding="Old/" kind="src" path="Magpie"/>
+	<classpathentry kind="src" path="Magpie/Old"/>
+	<classpathentry kind="src" path="MISC/java"/>
+	<classpathentry kind="src" path="MISC/NEW"/>
+	<classpathentry kind="src" path="Picture/pixLab/classes"/>
+	<classpathentry kind="src" path="TestSorts"/>
+	<classpathentry kind="src" path="TurtleGraphics/src"/>
+	<classpathentry kind="src" path="Week 1 - 5/Calculator"/>
+	<classpathentry kind="src" path="Week 1 - 5/CreativeConvert"/>
+	<classpathentry kind="src" path="Week 1 - 5/Employee Wages"/>
+	<classpathentry kind="src" path="Week 1 - 5/Freshman"/>
+	<classpathentry kind="src" path="Week 1 - 5/KiloTonNauti"/>
+	<classpathentry kind="src" path="Week 1 - 5/Quad Forrm"/>
+	<classpathentry kind="src" path="Week 1 - 5/Raised to the Power Programming Lab"/>
+	<classpathentry kind="src" path="Week 1 - 5/Sphere"/>
+	<classpathentry kind="src" path="Week 1 - 5/Templete"/>
+	<classpathentry kind="src" path="Week 1 - 5/Time"/>
+	<classpathentry kind="src" path="Week 1 - 5/Triangle"/>
+	<classpathentry kind="src" path="Week 1 - 5/whileError"/>
+	<classpathentry kind="src" path="Week 1 - 5/Yield!"/>
+	<classpathentry kind="src" path="Week 10/LetterGrade"/>
+	<classpathentry kind="src" path="Week 10/Random"/>
+	<classpathentry kind="src" path="Week 10/Random Computer"/>
+	<classpathentry kind="src" path="Week 11/LawnCrocodileBranch"/>
+	<classpathentry kind="src" path="Week 11/LetterGrade"/>
+	<classpathentry excluding="Graphics/" kind="src" path="Week 13"/>
+	<classpathentry kind="src" path="Week 13/Graphics"/>
+	<classpathentry excluding="Graphics/" kind="src" path="Week 15"/>
+	<classpathentry kind="src" path="Week 15/Graphics"/>
+	<classpathentry kind="src" path="Week 16"/>
+	<classpathentry kind="src" path="Week 17"/>
+	<classpathentry kind="src" path="Week 18/src"/>
+	<classpathentry kind="src" path="Week 19/src"/>
+	<classpathentry kind="src" path="Week 21/src"/>
+	<classpathentry kind="src" path="Week 25/src"/>
+	<classpathentry kind="src" path="Week 6/Quiz 5"/>
+	<classpathentry kind="src" path="Week 6/TeacherSalary"/>
+	<classpathentry kind="src" path="Week 8/BANK"/>
+	<classpathentry kind="src" path="Week 8/ScrabbleTile"/>
+	<classpathentry kind="src" path="Week 9/FractionClass"/>
+	<classpathentry kind="src" path="Week 9/Magpie"/>
+	<classpathentry kind="lib" path="images/images.jar"/>
+	<classpathentry kind="lib" path="TurtleGraphics/bin/TurtleGraphics.jar"/>
+	<classpathentry kind="lib" path="Week 18/bin/TurtleGraphics.jar"/>
+	<classpathentry kind="output" path="Celebrity/bin"/>
+</classpath>
