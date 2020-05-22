@@ -1,0 +1,30 @@
+public void updateCosts(double piano, double voice, double reg) {
+    for(Lesson les : lessonList) {
+        if(les.getType().equals("piano")) {
+            les.setCost(les.getCost() + piano);
+        } else if(les.getType().equals("voice")) {
+            les.setCost(les.getCost() + voice);
+        } else {
+            les.setCost(les.getCost() + reg);
+        }
+    }
+}
+
+public double getDiscountedLessonCost(double discount) {
+
+    int finalCost = 0;
+    boolean discountFound = false;
+    while(!discountFound) {
+        int random = (Math.random() * ((lessonList.size()) + 1)));
+        if((lessonList.get(random).isRegEarly()) {
+            discountFound = true;
+            finalCost = lessonList.get(random) - discont;
+        }
+    }
+    return finalCost;
+}
+
+public String getInstructorWithMostLessons()
+In order to locate the Instuctor with the most lessons, I would add a private String instance variable Instuctor to the Lesson class that will hold this Instuctors’s name.
+Then, I would add an accessor method public String getInstructor() which returns this Instructor's name.
+I would also modify at least one of the Lesson Class's constructors to take an additional parameter of the type String and set this Instructors Name to the value of that parameter.

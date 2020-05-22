@@ -1,0 +1,16 @@
+public static double analyzeInts(int max, int n) {
+    double count = 0;
+    int[] nums = IntegerAnalysis.getInt();
+    for (int i = 0; i < n; i++) {
+        if(nums[i] > 0 && nums[i] < max && nums[i] % 3 == 0) {
+            count++;
+        }
+    }
+
+    return (count / nums.length);
+}
+
+
+In order to check the divisibility of a number inside the analyzeInts function without overloading the function, I would create a private int named divisibilityNum.
+Then I would create a mutator method inside the IntegerAnalysis class declared as public void setDivisibiltyNum (int divisibilityNum) which would modify the variable divisibilityNum based on the value passed in from the parameter of the mutator method.
+Then inside the analyzeInts fucntion I would write an if statement that would modulo the integer in question and divisibilityNum.
